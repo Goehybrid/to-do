@@ -1,9 +1,10 @@
 var MAX_LETTERS = 20;
-$tasks = $('#tasks');
+var $tasks = $('#tasks');
 var $text = $('#newTask').find('input[type="text"]');
+var $button = $('input[type="button"]');
 var $counter = $('#counter');
 
-$('input[type="button"]').on('click', addTask);
+$button.on('click', addTask);
 
 $tasks.on('click', 'span', removeTask);
 
